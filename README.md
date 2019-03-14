@@ -74,7 +74,7 @@
 
 **微信交流群**
 
-<img src="https://github.com/romantichjw/jplogiccloud/blob/master/images/jplogiccloud%E5%BE%AE%E4%BF%A1%E4%BA%A4%E6%B5%81%E7%BE%A4.jpg" width="199px" height="264px">https://github.com/romantichjw/jplogiccloud/blob/master/images/jplogiccloud%E5%BE%AE%E4%BF%A1%E4%BA%A4%E6%B5%81%E7%BE%A4.jpg</img>
+<img src="https://github.com/romantichjw/jplogiccloud/blob/master/images/jplogiccloud%E5%BE%AE%E4%BF%A1%E4%BA%A4%E6%B5%81%E7%BE%A4.jpg" width="199px" height="264px"></img>
 
 **项目截图演示**
 

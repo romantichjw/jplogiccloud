@@ -1,4 +1,4 @@
-# jplogiccloud个人微服务架构平台实例
+# jplogiccloud微服务架构平台实例
 
 **项目介绍**
 

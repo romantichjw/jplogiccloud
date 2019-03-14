@@ -72,6 +72,10 @@
 
 ![jplogiccloud群二维码](https://github.com/romantichjw/jplogiccloud/blob/master/images/jplogiccloud%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png "jplogiccloud群二维码")
 
+**微信交流群**
+
+![jplogiccloud微信交流群](https://github.com/romantichjw/jplogiccloud/blob/master/images/jplogiccloud%E5%BE%AE%E4%BF%A1%E4%BA%A4%E6%B5%81%E7%BE%A4.jpg "jplogiccloud微信交流群")
+
 **项目截图演示**
 
 1、日志控制台

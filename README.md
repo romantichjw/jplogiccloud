@@ -68,6 +68,10 @@
 
 - 体验链接：<http://47.94.216.49:7477/login> 
 
+**技术QQ群交流**
+
+![jplogiccloud群二维码](https://github.com/romantichjw/jplogiccloud/blob/master/images/jplogiccloud%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png "jplogiccloud群二维码")
+
 **项目截图演示**
 
 1、日志控制台

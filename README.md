@@ -55,7 +55,7 @@
     jplogiccloud-app-platmgr-console-web（定义平台管理控制台前端web应用）
     jplogiccloud-app-platmgr-provider-api（定义平台管理后台feign Client以及各个微服务model【vo、dto、vo、enums、constants】）
     jplogiccloud-app-platmgr-provider-lgc（定义平台日志中心微服务api提供者，包含oauth2资源服务中心）
-    jplogiccloud-app-platmgr-provider-lgc（定义平台系统中心微服务api提供者，包含oauth2认证服务中心以及自身资源服务中心）
+    jplogiccloud-app-platmgr-provider-sys（定义平台系统中心微服务api提供者，包含oauth2认证服务中心以及自身资源服务中心）
 >>>
 >>>
 >>docs ===> 项目必要文档，主要是项目数据库脚本等；

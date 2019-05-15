@@ -66,7 +66,7 @@
 
 **项目在线体验**
 
-- 体验链接(正在备案个人域名，晚些开放)：<http://xxx/login> 
+- 体验链接：<https://www.jplogic.cn/login> 
 
 **技术QQ群交流**
 

@@ -38,7 +38,7 @@
 
 **三、架构图：**
 
-![架构图](https://github.com/romantichjw/jplogiccloud/blob/master/images/%E6%97%A5%E5%BF%97%E6%8E%A7%E5%88%B6%E5%8F%B0.png "日志控制台")
+![架构图](https://github.com/romantichjw/jplogiccloud/blob/master/images/Jplogiccloud%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg "架构图")
 
 **三、项目源代码结构：**
 

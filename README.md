@@ -130,6 +130,26 @@
 
 <img src="https://github.com/romantichjw/jplogiccloud/blob/master/images/jplogiccloud%E5%BE%AE%E4%BF%A1%E4%BA%A4%E6%B5%81%E7%BE%A4.jpg" width="199px" height="264px"></img>
 
+**项目CI/CD可持续集成演示**
+
+![cicd](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-gitlab.png "cicd")
+![cicd](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-jenkins.png "cicd")
+![cicd](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-harbor.png "cicd")
+![cicd](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-sonar.png "cicd")
+
+**项目GPE监控预警演示**
+
+![monitor](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-grafana1.png "monitor")
+![monitor](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-grafana2.png "monitor")
+![monitor](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-grafana3.png "monitor")
+![monitor](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-grafana4.png "monitor")
+
+**项目APM调用轨迹跟踪以及性能演示**
+
+![monitor](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-skywalking1.png "monitor")
+![monitor](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-skywalking2.png "monitor")
+![monitor](https://github.com/romantichjw/jplogiccloud/blob/master/images/show-skywalking3.png "monitor")
+
 **项目截图演示**
 
 1、日志控制台

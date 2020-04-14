@@ -35,6 +35,7 @@
 * 分布式事务：alibaba-seata ＋ txlcn + mq消息最终一致性事务控制
 * CI/CD：GIT + Gitlab + Nexus + Maven + Jenkins Pipline + Sonar + Harbor + Docker + K8s 
 * 分布式配置：Apollo + Nacos
+* 分库分表：Sharding-jdbc- + Mycat
 
 **三、架构图：**
 

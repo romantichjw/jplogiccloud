@@ -23,76 +23,42 @@
 
 **三、项目源代码结构：**
 
-├── docs
-│   ├── databases
-│   └── scripts
-├── jplogiccloud-apps
-│   ├── jplogiccloud-app-crawler
-│   ├── jplogiccloud-app-dfs
-│   ├── jplogiccloud-app-platmgr
-│   └── pom.xml
-├── jplogiccloud-bootstarter
-│   ├── jplogiccloud-bootstarter.iml
-│   ├── jplogiccloud-starter-akka-cluster
-│   ├── jplogiccloud-starter-akka-standalone
-│   ├── jplogiccloud-starter-email
-│   ├── jplogiccloud-starter-es
-│   ├── jplogiccloud-starter-fraudcheck
-│   ├── jplogiccloud-starter-geo
-│   ├── jplogiccloud-starter-im-tencent
-│   ├── jplogiccloud-starter-logger
-│   ├── jplogiccloud-starter-oauth2-feign
-│   ├── jplogiccloud-starter-ocr-alicloud
-│   ├── jplogiccloud-starter-oss-alicloud
-│   ├── jplogiccloud-starter-oss-base
-│   ├── jplogiccloud-starter-oss-fastdfs
-│   ├── jplogiccloud-starter-oss-minio
-│   ├── jplogiccloud-starter-oss-qiniucloud
-│   ├── jplogiccloud-starter-prometheus
-│   ├── jplogiccloud-starter-redis
-│   ├── jplogiccloud-starter-sentinel
-│   ├── jplogiccloud-starter-sms-alicloud
-│   ├── jplogiccloud-starter-sqllog
-│   └── pom.xml
-├── jplogiccloud-common
-│   ├── jplogiccloud-common-core
-│   ├── jplogiccloud-common.iml
-│   ├── jplogiccloud-common-security
-│   └── pom.xml
-├── jplogiccloud-component
-│   ├── jplogiccloud-component.iml
-│   ├── jplogiccloud-component-tracer
-│   ├── jplogiccloud-component-ws
-│   └── pom.xml
-├── jplogiccloud-dao
-│   ├── jplogiccloud-dao-base
-│   ├── jplogiccloud-dao-file
-│   ├── jplogiccloud-dao.iml
-│   ├── jplogiccloud-dao-lgc
-│   ├── jplogiccloud-dao-sys
-│   └── pom.xml
-├── jplogiccloud-environment
-│   ├── jplogiccloud-admin-server
-│   ├── jplogiccloud-config-server
-│   ├── jplogiccloud-environment.iml
-│   ├── jplogiccloud-monitor-dashboard
-│   ├── jplogiccloud-monitor-prometheus-grafana
-│   ├── jplogiccloud-monitor-skywalking
-│   ├── jplogiccloud-monitor-zipkin
-│   ├── jplogiccloud-registrycenter-eureka
-│   ├── jplogiccloud-registrycenter-nacos
-│   ├── jplogiccloud-sentinel-dashboard
-│   └── pom.xml
-├── jplogiccloud-gateway
-│   ├── build-image.sh
-│   ├── Dockerfile
-│   ├── jplogiccloud-gateway.iml
-│   ├── pom.xml
-│   ├── src
-│   └── target
-├── jplogiccloud-master.iml
-├── pom.xml
-└── README.md
+>jplogiccloud-master
+>>jplogiccloud-environment ===> springcloud运行环境，包含注册中心、SBA(spring boot admin)、配置中心、hystrix监控白板、zipkin分布式轨迹跟踪监控管理工具、注册中心（eureka\consul）
+>>>
+    jplogiccloud-admin-server（spring boot admin）
+    jplogiccloud-config-server（配置中心）
+    jplogiccloud-monitor-dashboard（hystrix监控白板）
+    jplogiccloud-monitor-zipkin（zipkin分布式轨迹跟踪监控管理工具）
+    jplogiccloud-registrycenter-eureka（注册中心-eureka）
+>>jplogiccloud-common ===> 公共工具模块，主要负责定义公共工具或者核心工具类模块
+>>>
+    jplogiccloud-common-core（定义项目所有模块都有可能公用的工具，注意：不允许在该模块定义springboot自动启动配置类）
+    jplogiccloud-common-security（定义oauth2安全认证相关的基础工具封装）
+>>jplogiccloud-component ===> 公共组件模块，主要负责定义第三方组件模块
+>>>
+    jplogiccloud-component-akka（定义akka组件，基于事件驱动的轻量级组件）
+    jplogiccloud-component-tracer（定义zipkin分布式轨迹跟踪信息上报组件）
+    jplogiccloud-component-wf（定义工作流组件）
+    jplogiccloud-component-ws（定义websocket相关自动配置组件）
+>>jplogiccloud-dao ===> 数据访问层dao（mongo\mysql）模块,提供分库分表操作相关配置
+>>>
+    jplogiccloud-dao-base（定义数据访问层（mongo\mysql）基础类）
+    jplogiccloud-dao-sys（定义系统中心库entity、mapper映射以及分库分表定义配置）
+    jplogiccloud-dao-lgc（定义日志中心库entity、mapper映射以及分库分表定义配置）
+>>jplogiccloud-gateway ===> zuul网关模块,主要负责请求路由、限流、权限等功能
+>>jplogiccloud-apps ===> 平台扩展应用模块
+>>>
+    jplogiccloud-app-crawler（定义爬虫应用模块）
+    jplogiccloud-app-platmgr（定义RAC权限框里后台以及其他应用后台模块）
+>>>>
+    jplogiccloud-app-platmgr-console-web（定义平台管理控制台前端web应用）
+    jplogiccloud-app-platmgr-provider-api（定义平台管理后台feign Client以及各个微服务model【vo、dto、vo、enums、constants】）
+    jplogiccloud-app-platmgr-provider-lgc（定义平台日志中心微服务api提供者，包含oauth2资源服务中心）
+    jplogiccloud-app-platmgr-provider-sys（定义平台系统中心微服务api提供者，包含oauth2认证服务中心以及自身资源服务中心）
+>>>
+>>>
+>>docs ===> 项目必要文档，主要是项目数据库脚本等；
 
 **作者介绍**
 

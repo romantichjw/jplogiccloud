@@ -1,25 +1,44 @@
-# jplogiccloud微服务架构平台实例
+# jplogiccloud微服务架构平台-微服务快速开发脚手架
 
 **项目介绍**
 
 **一、功能点：**
 
-   >该项目主要完成了RAC权限管理系统实例，并提供相关springcloud微服务架构运维监控组件（zipkin\turbine\hystrix-dashboard\spring boot admin\分布式swagger在线api）。
+   >该项目主要完成了RBAC权限管理系统实例（系统管理、用户管理、角色管理等），基于Springcloud企业级微服务架构的快速开发脚手架，除了能够快速的构建权限管理系统之外同时也能够快速基于该脚手架快速构建企业级产品（互联网APP、Saas系统等），并提供相关springcloud微服务架构运维监控组件（zipkin\turbine\hystrix-dashboard\spring boot admin\分布式swagger在线文档）以及集成了主流的APM监控运维体系Skywalking(对标springcloud的zipkinServer)、集成了GPE（Grafana +Prometheus+Exporters）系统监控系统，同时也集成了ELK日志收集平台，能够把一整套目前互联网公司主流技术栈全套迁移到各个企业中去，并根据需要灵活定制，同时提供一整套企业级CI/CD解决方案，支持Docker/K8s服务容器化自动化。
 	
 **二、技术点：**
 
-   >核心技术为springcloud + akka + bootstrap等多个技术栈实现，基本都是采取了开源技术实现以及自研组件，该项目的技术栈只有部分技术采用的第三方服务是收费的，如阿里云的服务，基本上都是基于目前互联网公司常用的框架技术，可以为互联网创业公司解决微服务架构相关问题，可以帮助公司快速构建项目。本项目由多个后端springcloud微服务项目和1个前端web项目共同组成。实现了基于RBAC的权限管理（内部采用jwt+oauth2技术实现token无状态权限认证）解决方案，还可以基于该平台构建各种互联网公司的app服务端微服务架构以及认证体系等。
+   >该脚手架集成了丰富的spring-boot-starter，可根据企业的产品功能的需要灵活装配需要的组件，这让开发人员花更多的时间在使用这些集成好的组件完成具体的业务逻辑，并能够通过平台提供的各种监控体系构件很清楚的了解系统服务生命周期过程中的各种指标状态，基本上采用了开源技术实现以及自研组件，因此基于微服务架构开源标准，目前的开发人员很容易上手使用，可以为互联网创业公司解决微服务架构相关问题，可以帮助公司快速构建项目。本项目由多个后端springcloud微服务项目和1个前端web项目共同组成。实现了基于RBAC的权限管理解决方案，还可以基于该平台构建各种互联网公司的app服务端微服务架构以及认证体系等。
    
    
-* 核心框架：springcloud Finchley.SR2全家桶
+* 核心框架：Greenwich.SR5全家桶
 * 安全框架：spring security + springcloud Oauth2
-* 分布式任务调度：elastic Job Lite
+* 事件驱动EDA框架：akka-standalone模式、akka-cluster模式
+* 分布式搜素引擎框架：ElasteSearch 
+* 腾讯IM SDK：IM starter
+* 分布式任务调度：Elastic Job Lite + XXL-JOB
 * 持久层框架：myBatis（myBatis-generator）、sharding-jdbc、mongo
 * 数据库连接池：alibaba Druid
-* 日志管理：logback	
-*  前端框架：bootstrap以及其他第三方开源前端插件
+* 日志管理：ELK(Log-pilot)
+* OSS文件存储：oss-aliyun、oss-fastdfs、oss-minio、oss-qiniucloud (按照公司技术选型要求灵活集成)
+* 监控体系：GPE(Grafana + Prometheus + Exporters(Sofa-lookout监控[基于eureka服务发现]等各种Exporter))
+* 分布式服务调用链跟踪服务以及APM：ZinkinServer + Skywalking(以及微服务docker镜像集成skywaling_agent) 
+* 前端框架：bootstrap以及其他第三方开源前端插件
 * 第三方组件服务： 邮件服务、百度地图API
-*  消息队列：kafka
+* 消息队列：kafka + rabbitmq + rocketmq 
+* 大数据存储：hbase
+* 反爬虫检查：api资源反爬虫检查
+* Ocr实名认证：阿里云ocr服务（ocr-starter）
+* 消息推送服务：极光推送
+* 短信服务：阿里云短信服务 +　第三方短信服务　短信服务路由
+* 服务降级：alibaba-sentinel＋springcloud-Hystrix
+* 分布式事务：alibaba-seata ＋ txlcn + mq消息最终一致性事务控制
+* CI/CD：GIT + Gitlab + Nexus + Maven + Jenkins Pipline + Sonar + Harbor + Docker + K8s 
+* 分布式配置：Apollo + Nacos
+
+**三、架构图：**
+
+![架构图](https://github.com/romantichjw/jplogiccloud/blob/master/images/%E6%97%A5%E5%BF%97%E6%8E%A7%E5%88%B6%E5%8F%B0.png "日志控制台")
 
 **三、项目源代码结构：**
 
@@ -100,7 +119,7 @@
 
 **项目在线体验**
 
-- 体验链接：<https://www.jplogic.cn/login> 
+- 体验链接：<https://www.jplogic.cn/login>   登陆账号admin/huangjianwen
 
 **技术QQ群交流**
 

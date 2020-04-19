@@ -154,7 +154,7 @@
 
 **技术QQ群交流**
 
-![jplogiccloud群二维码](http://image.jplogic.cn/img/jplogiccloud-qcode.png "jplogiccloud群二维码")
+![jplogiccloud群二维码](http://image.jplogic.cn/img/Jplogiccloud-qcode2.png "jplogiccloud群二维码")
 
 **微信交流群**
 

@@ -49,7 +49,9 @@
 * 支持多种日志平台
 * 缓存+lua并发支持 
 * 支持多种分布式锁
+* 应用命令行
 * 分布式任务调度
+* 分布式事务管理
 * 支持CI/CD持续集成
 * 分布式高性能Id生成器（大厂使用的方案）
 * 系统监控基础设施
@@ -73,76 +75,92 @@
 
 **五、项目源代码结构：**
 
+
 ├── docs  
-│   ├── databases  
-│   └── scripts  
+│   ├── databases    
+│   └── scripts   
 ├── jplogiccloud-apps  
-│   ├── jplogiccloud-app-crawler  
-│   ├── jplogiccloud-app-dfs  
-│   ├── jplogiccloud-app-platmgr  
-│   └── pom.xml  
-├── jplogiccloud-bootstarter  
-│   ├── jplogiccloud-bootstarter.iml  
-│   ├── jplogiccloud-starter-akka-cluster  
-│   ├── jplogiccloud-starter-akka-standalone  
-│   ├── jplogiccloud-starter-email  
-│   ├── jplogiccloud-starter-es    
-│   ├── jplogiccloud-starter-fraudcheck    
-│   ├── jplogiccloud-starter-geo    
-│   ├── jplogiccloud-starter-im-tencent  
-│   ├── jplogiccloud-starter-logger  
-│   ├── jplogiccloud-starter-oauth2-feign  
-│   ├── jplogiccloud-starter-ocr-alicloud  
-│   ├── jplogiccloud-starter-oss-alicloud  
-│   ├── jplogiccloud-starter-oss-base  
-│   ├── jplogiccloud-starter-oss-fastdfs  
-│   ├── jplogiccloud-starter-oss-minio  
-│   ├── jplogiccloud-starter-oss-qiniucloud  
-│   ├── jplogiccloud-starter-prometheus  
-│   ├── jplogiccloud-starter-redis  
-│   ├── jplogiccloud-starter-sentinel  
-│   ├── jplogiccloud-starter-sms-alicloud  
-│   ├── jplogiccloud-starter-sqllog  
-│   └── pom.xml  
-├── jplogiccloud-common  
-│   ├── jplogiccloud-common-core  
-│   ├── jplogiccloud-common.iml  
-│   ├── jplogiccloud-common-security  
-│   └── pom.xml  
-├── jplogiccloud-component  
-│   ├── jplogiccloud-component.iml  
-│   ├── jplogiccloud-component-tracer  
-│   ├── jplogiccloud-component-ws  
-│   └── pom.xml  
-├── jplogiccloud-dao  
-│   ├── jplogiccloud-dao-base  
-│   ├── jplogiccloud-dao-file  
-│   ├── jplogiccloud-dao.iml  
-│   ├── jplogiccloud-dao-lgc  
-│   ├── jplogiccloud-dao-sys  
-│   └── pom.xml  
-├── jplogiccloud-environment  
-│   ├── jplogiccloud-admin-server  
-│   ├── jplogiccloud-config-server  
-│   ├── jplogiccloud-environment.iml  
-│   ├── jplogiccloud-monitor-dashboard  
-│   ├── jplogiccloud-monitor-prometheus-grafana  
-│   ├── jplogiccloud-monitor-skywalking  
-│   ├── jplogiccloud-monitor-zipkin  
-│   ├── jplogiccloud-registrycenter-eureka  
-│   ├── jplogiccloud-registrycenter-nacos  
-│   ├── jplogiccloud-sentinel-dashboard  
-│   └── pom.xml  
-├── jplogiccloud-gateway  
-│   ├── build-image.sh  
-│   ├── Dockerfile  
-│   ├── jplogiccloud-gateway.iml  
-│   ├── pom.xml  
-│   ├── src  
-│   └── target  
-├── jplogiccloud-master.iml  
-├── pom.xml  
-└── README.md  
+│   ├── jplogiccloud-app-crawler   
+│   ├── jplogiccloud-app-dfs   
+│   ├── jplogiccloud-app-keygen   
+│   ├── jplogiccloud-app-platmgr   
+│   └── pom.xml     
+├── jplogiccloud-bootstarter     
+│   ├── jplogiccloud-bootstarter.iml   
+│   ├── jplogiccloud-starter-akka-cluster    
+│   ├── jplogiccloud-starter-akka-standalone   
+│   ├── jplogiccloud-starter-email   
+│   ├── jplogiccloud-starter-es     
+│   ├── jplogiccloud-starter-fraudcheck    
+│   ├── jplogiccloud-starter-geo    
+│   ├── jplogiccloud-starter-hbase    
+│   ├── jplogiccloud-starter-im-tencent   
+│   ├── jplogiccloud-starter-logger   
+│   ├── jplogiccloud-starter-mq-kafka    
+│   ├── jplogiccloud-starter-mq-rabbit    
+│   ├── jplogiccloud-starter-oauth2-feign    
+│   ├── jplogiccloud-starter-ocr-alicloud    
+│   ├── jplogiccloud-starter-oss-alicloud    
+│   ├── jplogiccloud-starter-oss-base   
+│   ├── jplogiccloud-starter-oss-fastdfs   
+│   ├── jplogiccloud-starter-oss-minio   
+│   ├── jplogiccloud-starter-oss-qiniucloud   
+│   ├── jplogiccloud-starter-prometheus   
+│   ├── jplogiccloud-starter-redis   
+│   ├── jplogiccloud-starter-sentinel   
+│   ├── jplogiccloud-starter-sms-alicloud    
+│   ├── jplogiccloud-starter-sqllog   
+│   ├── jplogiccloud-starter-zookeeper   
+│   └── pom.xml   
+├── jplogiccloud-common   
+│   ├── jplogiccloud-common-core   
+│   ├── jplogiccloud-common.iml   
+│   ├── jplogiccloud-common-security   
+│   └── pom.xml    
+├── jplogiccloud-component   
+│   ├── jplogiccloud-component.iml   
+│   ├── jplogiccloud-component-tracer   
+│   ├── jplogiccloud-component-ws   
+│   └── pom.xml   
+├── jplogiccloud-dao    
+│   ├── jplogiccloud-dao-base    
+│   ├── jplogiccloud-dao-file   
+│   ├── jplogiccloud-dao.iml    
+│   ├── jplogiccloud-dao-lgc   
+│   ├── jplogiccloud-dao-sys   
+│   └── pom.xml   
+├── jplogiccloud-environment   
+│   ├── jplogiccloud-admin-server    
+│   ├── jplogiccloud-config-server    
+│   ├── jplogiccloud-environment.iml    
+│   ├── jplogiccloud-monitor-dashboard    
+│   ├── jplogiccloud-monitor-prometheus-grafana    
+│   ├── jplogiccloud-monitor-skywalking    
+│   ├── jplogiccloud-monitor-zipkin    
+│   ├── jplogiccloud-registrycenter-eureka    
+│   ├── jplogiccloud-registrycenter-nacos    
+│   ├── jplogiccloud-sentinel-dashboard   
+│   └── pom.xml    
+├── jplogiccloud-gateway    
+│   ├── build-image.sh      
+│   ├── Dockerfile   
+│   ├── IMAGE_NAME   
+│   ├── jplogiccloud-gateway.iml    
+│   ├── pom.xml   
+│   ├── src    
+│   ├── TAG_NAME    
+│   └── target    
+├── jplogiccloud-master.iml    
+├── package-dev.bat    
+├── package-dev.sh    
+├── package-pro.bat    
+├── package-pro.sh    
+├── package-test.bat    
+├── package-test.sh    
+├── pom.xml    
+└── README.md   
+
+
 
 **作者介绍**
 

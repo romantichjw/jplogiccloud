@@ -68,10 +68,21 @@
 * 支持多种分布式文件存储
 * 事件驱动
 * 容器化部署
+* 自研爬虫引擎j2crawler
 
 **四、架构图：**
 
+脚手架通用架构（可根据企业的要求灵活调整）：
+
 ![架构图](http://image.jplogic.cn/img/Jplogiccloud-archecture.jpg "架构图")
+
+J2crawler爬虫引擎架构图：
+
+![J2crawler爬虫引擎架构图](http://image.jplogic.cn/img/J2crawler-archecture.png "J2crawler爬虫引擎架构图")
+
+J2crawler爬虫引擎内部组件架构图：
+
+![J2crawler爬虫引擎内部组件架构图](http://image.jplogic.cn/img/jplogiccloud-j2crawler-engine.png "J2crawler爬虫引擎内部组件架构图")
 
 **五、项目源代码结构：**
 

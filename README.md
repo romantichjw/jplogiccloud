@@ -193,9 +193,6 @@ jplogic大数据BI大屏展示：
 
 ![jplogiccloud群二维码](http://image.jplogic.cn/img/Jplogiccloud-qcode2.png "jplogiccloud群二维码")
 
-**微信交流群**
-
-<img src="http://image.jplogic.cn/img/jplogiccloud-wechat-qun.jpg" width="199px" height="264px"></img>
 
 **项目CI/CD可持续集成演示**
 

@@ -71,6 +71,7 @@
 * 容器化部署
 * 自研爬虫引擎j2crawler
 * OCR图像文字识别
+* 微信公众号
 
 **四、架构图：**
 
@@ -100,7 +101,8 @@ jplogic大数据BI大屏展示：
 │   ├── jplogiccloud-app-crawler   
 │   ├── jplogiccloud-app-dfs   
 │   ├── jplogiccloud-app-keygen   
-│   ├── jplogiccloud-app-platmgr    
+│   ├── jplogiccloud-app-platmgr   
+│   ├── jplogiccloud-app-wechat-mp    
 │   └── pom.xml    
 ├── jplogiccloud-bootstarter    
 │   ├── jplogiccloud-bootstarter.iml    

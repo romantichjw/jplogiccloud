@@ -87,6 +87,10 @@ J2crawler爬虫引擎内部组件架构图：
 
 ![J2crawler爬虫引擎内部组件架构图](http://image.jplogic.cn/img/jplogiccloud-j2crawler-engine.png "J2crawler爬虫引擎内部组件架构图")
 
+Java微信公众号文章抓取实例：
+
+![J2crawler爬虫微信公众号文章抓取实例架构图](http://image.jplogic.cn/img/wechat_jiagou.jpg "J2crawler爬虫微信公众号文章抓取实例架构图")
+
 jplogic大数据BI大屏展示：
 
 ![数据BI大屏](http://image.jplogic.cn/img/bishow.png "数据BI大屏")

@@ -4,7 +4,8 @@
 
 **一、功能点：**
 
-     >该项目主要是 **RBAC权限管理系统实例** 内含功能"麻雀虽小五脏俱全"，可以基于平台组件拓展很多产品应用场景的实现（ **其中涵盖微服务架构（监控+分布式配置+服务熔断+服务资源隔离+服务限流+反爬限制+多级缓存架构等）+大数据（实时计算与存储）+多种对象存储方案 + 爬虫引擎（多场景数据抓取）+搜索引擎（海量数据搜索）+ELK+APM(Skywalking)+GPE+Docker+K8S+CICD+第三方服务等的综合实例** ），基于Springcloud企业级微服务架构的快速开发脚手架，除了能够快速的构建权限管理系统之外同时也能够 **快速基于该脚手架快速构建企业级产品（互联网APP、SAAS系统等）** ，并提供相关Springcloud微服务架构运维监控组件（Zipkin\Turbine\Hystrix-dashboard\Spring boot admin\Nacos\Sentinel\分布式Swagger在线文档）以及集成了主流的APM监控运维体系Skywalking(对标springcloud的ZipkinServer)、集成了GPE（Grafana +Prometheus+Exporters）系统监控系统，同时也集成了ELK日志收集平台，能够把一整套目前互联网公司主流技术栈全套迁移到各个企业中去，并根据需要灵活定制，同时提供一整套企业级CI/CD解决方案，支持Docker/K8s服务容器化自动化。
+     >该项目主要是 RBAC权限管理系统实例 内含功能"麻雀虽小五脏俱全"，可以基于平台组件拓展很多产品应用场景的实现（其中涵盖微服务架构（监控+分布式配置+服务熔断+服务资源隔离+服务限流+反爬限制+多级缓存架构等）+大数据（实时计算与存储）+多种对象存储方案 + 爬虫引擎（多场景数据抓取）+搜索引擎（海量数据搜索）+ELK+APM(Skywalking)+GPE+Docker+K8S+CICD+第三方服务等的综合实例 ），基于Springcloud企业级微服务架构的快速开发脚手架，除了能够快速的构建权限管理系统之外同时也能够 快速基于该脚手架快速构建企业级产品（互联网APP、SAAS系统等），并提供相关Springcloud微服务架构运维监控组件（Zipkin\Turbine\Hystrix-dashboard\Spring boot admin\Nacos\Sentinel\分布式Swagger在线文档）以及集成了主流的APM监控运维体系Skywalking(对标Springcloud的ZipkinServer)、集成了GPE（Grafana +Prometheus+Exporters）系统监控系统，同时也集成了ELK日志收集平台，能够把一整套目前互联网公司主流技术栈全套迁移到各个企业中去，并根据需要灵活定制，同时提供一整套企业级CI/CD解决方案，支持Docker/K8s服务容器化自动化。
+     
 	
 **二、技术点：**
 

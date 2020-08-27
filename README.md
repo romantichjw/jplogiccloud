@@ -4,45 +4,46 @@
 
 **一、功能点：**
 
-   >该项目主要是RBAC权限管理系统实例（系统管理、用户管理、角色管理等），基于Springcloud企业级微服务架构的快速开发脚手架，除了能够快速的构建权限管理系统之外同时也能够快速基于该脚手架快速构建企业级产品（互联网APP、Saas系统等），并提供相关springcloud微服务架构运维监控组件（zipkin\turbine\hystrix-dashboard\spring boot admin\nacos\sentinel\分布式swagger在线文档）以及集成了主流的APM监控运维体系Skywalking(对标springcloud的zipkinServer)、集成了GPE（Grafana +Prometheus+Exporters）系统监控系统，同时也集成了ELK日志收集平台，能够把一整套目前互联网公司主流技术栈全套迁移到各个企业中去，并根据需要灵活定制，同时提供一整套企业级CI/CD解决方案，支持Docker/K8s服务容器化自动化。
+     >该项目主要是 **RBAC权限管理系统实例** 内含功能"麻雀虽小五脏俱全"，可以基于平台组件拓展很多产品应用场景的实现（ **其中涵盖微服务架构（监控+分布式配置+服务熔断+服务资源隔离+服务限流+反爬限制+多级缓存架构等）+大数据（实时计算与存储）+多种对象存储方案 + 爬虫引擎（多场景数据抓取）+搜索引擎（海量数据搜索）+ELK+APM(Skywalking)+GPE+Docker+K8S+CICD+第三方服务等的综合实例** ），基于Springcloud企业级微服务架构的快速开发脚手架，除了能够快速的构建权限管理系统之外同时也能够 **快速基于该脚手架快速构建企业级产品（互联网APP、SAAS系统等）** ，并提供相关Springcloud微服务架构运维监控组件（Zipkin\Turbine\Hystrix-dashboard\Spring boot admin\Nacos\Sentinel\分布式Swagger在线文档）以及集成了主流的APM监控运维体系Skywalking(对标springcloud的ZipkinServer)、集成了GPE（Grafana +Prometheus+Exporters）系统监控系统，同时也集成了ELK日志收集平台，能够把一整套目前互联网公司主流技术栈全套迁移到各个企业中去，并根据需要灵活定制，同时提供一整套企业级CI/CD解决方案，支持Docker/K8s服务容器化自动化。
 	
 **二、技术点：**
 
-   >该脚手架集成了丰富的spring-boot-starter，可根据企业的产品功能的需要灵活装配需要的组件，这让开发人员花更多的时间在使用这些集成好的组件完成具体的业务逻辑，并能够通过平台提供的各种监控体系构件很清楚的了解系统服务生命周期过程中的各种指标状态，基本上采用了开源技术实现以及自研组件，因此基于微服务架构开源标准，目前的开发人员很容易上手使用，可以为互联网创业公司解决微服务架构相关问题，可以帮助公司快速构建项目。本项目由多个后端springcloud微服务项目和1个前端web项目共同组成。实现了基于RBAC的权限管理解决方案，还可以基于该平台构建各种互联网公司的app服务端微服务架构以及认证体系等。
+   >该脚手架集成了丰富的Spring-Boot-Starter，可根据企业的产品功能的需要灵活装配需要的组件，这让开发人员花更多的时间在使用这些集成好的组件完成具体的业务逻辑，并能够通过平台提供的各种监控体系构件很清楚的了解系统服务生命周期过程中的各种指标状态，基本上采用了开源技术实现以及自研组件，因此基于微服务架构开源标准，目前的开发人员很容易上手使用，可以为互联网创业公司解决微服务架构相关问题，可以帮助公司快速构建项目。本项目由多个后端springcloud微服务项目和1个前端web项目共同组成。实现了基于RBAC的权限管理解决方案，还可以基于该平台构建各种互联网公司的app服务端微服务架构以及认证体系等。
    
    
 * 核心框架：Greenwich.SR5全家桶
-* 安全框架：spring security + springcloud Oauth2
-* 事件驱动EDA框架：akka-standalone模式、akka-cluster模式
+* 安全框架：Spring Security + Springcloud Oauth2
+* 事件驱动EDA框架：Akka-standalone模式、Akka-cluster模式
 * 分布式搜素引擎框架：ElasteSearch 
 * 腾讯IM SDK：IM starter
 * 分布式任务调度：Elastic Job Lite + XXL-JOB
-* 持久层框架：myBatis（myBatis-generator）、sharding-jdbc、mongo
-* 数据库连接池：alibaba Druid
+* 持久层框架：MyBatis（myBatis-generator）、Sharding-jdbc、Mongo
+* 数据库连接池：Alibaba Druid
 * 日志管理：ELK(Log-pilot)
-* OSS文件存储：oss-aliyun、oss-fastdfs、oss-minio、oss-qiniucloud、oss-tencent (按照公司技术选型要求灵活集成)
+* OSS文件存储：OSS-Aliyun、OSS-fastdfs、OSS-minio、OSS-qiniucloud、OSS-Tencant (按照公司技术选型要求灵活集成)
 * 监控体系：GPE(Grafana + Prometheus + Exporters(Sofa-lookout监控[基于eureka服务发现]等各种Exporter))
 * 分布式服务调用链跟踪服务以及APM：ZinkinServer + Skywalking(以及微服务docker镜像集成skywaling_agent) 
 * 前端框架：bootstrap以及其他第三方开源前端插件
 * 第三方组件服务： 邮件服务、百度地图API
-* 消息队列：kafka + rabbitmq + rocketmq 
-* 大数据存储：hbase
+* 消息队列：Kafka + Rabbitmq + Rocketmq 
+* 大数据存储：Hbase
 * 反爬虫、接口防盗刷组件：反爬虫、接口防盗刷检查，支持多种反爬规则检查
-* Ocr实名认证：阿里云ocr服务（ocr-starter）
+* Ocr实名认证：阿里云Ocr服务（Ocr-starter）
 * OCR图像文字识别
 * 消息推送服务：极光推送
 * 短信服务：阿里云短信服务 +　第三方短信服务　短信服务路由
-* 服务降级：alibaba-sentinel＋springcloud-Hystrix
-* 分布式事务：alibaba-seata ＋ txlcn + mq消息最终一致性事务控制
+* 服务降级(服务保护、资源隔离)：Alibaba-Sentinel＋Springcloud-Hystrix
+* 分布式事务：Alibaba-Seata ＋ txLCN + MQ消息最终一致性事务控制
 * CI/CD：GIT + Gitlab + Nexus + Maven + Jenkins Pipline + Sonar + Harbor + Docker + K8s 
 * 分布式配置：Apollo + Nacos
 * 分库分表：Sharding-jdbc- + Mycat
+* 消息推送：WebSocket
 
 **三、功能简述：**
 
-* 集成了oauth2多种认证方式
+* 集成了Oauth2多种认证方式
 （手机号、openId、图形验证码、第三方系统授权登陆，如微信开发平台、支付宝等）以及认证模式；
-* 服务注册发现、
+* 服务注册发现 
 * 路由与负载均衡
 * 服务降级与熔断
 * 服务资源反爬虫验证
@@ -50,9 +51,10 @@
 * 支持多种日志平台
 * 缓存+lua并发支持 
 * 支持多种分布式锁
-* 应用命令行
 * 分布式任务调度
 * 分布式事务管理
+* 应用命令行
+* 服务协调以及目录命名服务
 * 支持CI/CD持续集成
 * 分布式高性能Id生成器（大厂使用的方案）
 * 系统监控基础设施
@@ -69,9 +71,10 @@
 * 支持多种分布式文件存储
 * 事件驱动
 * 容器化部署
-* 自研爬虫引擎j2crawler
+* 自研爬虫引擎J2crawler
 * OCR图像文字识别
 * 微信公众号
+* Storm实时流计算
 
 **四、架构图：**
 
@@ -91,6 +94,23 @@ Java微信公众号文章抓取实例：
 
 ![J2crawler爬虫微信公众号文章抓取实例架构图](http://image.jplogic.cn/img/wechat_jiagou.jpg "J2crawler爬虫微信公众号文章抓取实例架构图")
 
+微信公众号文章热词（词频）实时计算并刷新词云图：
+PS:该案例可运用到其他产品的场景，如电商热门商品预热、广告实时点击量、APP界面用户行为热力图等实时流计算的场景
+
+![实时流计算](http://image.jplogic.cn/img/storm1.png "实时流计算")
+![实时流计算](http://image.jplogic.cn/img/storm2.png "实时流计算")
+![实时流计算](http://image.jplogic.cn/img/storm3.png "实时流计算")
+![实时流计算](http://image.jplogic.cn/img/storm4.png "实时流计算")
+![实时流计算](http://image.jplogic.cn/img/storm5.png "实时流计算")
+
+抓取的公众号文章展示：
+
+<div>
+<img src="http://image.jplogic.cn/img/wechat_mp_1.jpg" alt="微信公众号文章抓取" width="290" height="600" align="left" />
+<img src="http://image.jplogic.cn/img/wechat_mp_2.jpg" alt="微信公众号文章抓取" width="290" height="600" align="left" />
+<img src="http://image.jplogic.cn/img/wechat_mp_3.jpg" alt="微信公众号文章抓取" width="290" height="600" align="left" />
+</div>
+
 jplogic大数据BI大屏展示：
 
 ![数据BI大屏](http://image.jplogic.cn/img/bishow.png "数据BI大屏")
@@ -106,16 +126,20 @@ jplogic大数据BI大屏展示：
 │   ├── jplogiccloud-app-dfs   
 │   ├── jplogiccloud-app-keygen   
 │   ├── jplogiccloud-app-platmgr   
+│   ├── jplogiccloud-app-storm   
 │   ├── jplogiccloud-app-wechat-mp    
 │   └── pom.xml    
 ├── jplogiccloud-bootstarter    
 │   ├── jplogiccloud-bootstarter.iml    
 │   ├── jplogiccloud-starter-akka-cluster    
-│   ├── jplogiccloud-starter-akka-standalone   
+│   ├── jplogiccloud-starter-akka-standalone    
+│   ├── jplogiccloud-starter-apollo       
+│   ├── jplogiccloud-starter-ehcache      
 │   ├── jplogiccloud-starter-email  
 │   ├── jplogiccloud-starter-es  
 │   ├── jplogiccloud-starter-fraudcheck  
-│   ├── jplogiccloud-starter-geo  
+│   ├── jplogiccloud-starter-geo   
+│   ├── jplogiccloud-starter-hystrix      
 │   ├── jplogiccloud-starter-hbase  
 │   ├── jplogiccloud-starter-im-tencent  
 │   ├── jplogiccloud-starter-j2crawler  
@@ -136,6 +160,7 @@ jplogic大数据BI大屏展示：
 │   ├── jplogiccloud-starter-sentinel  
 │   ├── jplogiccloud-starter-sms-alicloud  
 │   ├── jplogiccloud-starter-sqllog  
+│   ├── jplogiccloud-starter-tenant   
 │   ├── jplogiccloud-starter-websocket  
 │   ├── jplogiccloud-starter-zookeeper  
 │   └── pom.xml  

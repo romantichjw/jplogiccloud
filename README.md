@@ -214,15 +214,11 @@ jplogic大数据BI大屏展示：
 
 **作者介绍**
 
-开源技术爱好者，springboot\springcloud\dubbo\大数据相关技术（spark\hadoop\kafka\scala）\容器docker等主流开源框架实践者，曾在多家互联网公司担任技术负责人兼高级架构师，负责过多个从零1互联网项目，从事医疗、金融、区块链等行业，有丰富的互联网经验，非常欢迎与大家进行相关交流；
+开源技术爱好者，springboot\springcloud\dubbo\大数据相关技术（spark\hadoop\kafka\scala）\容器docker等主流开源框架实践者,非常欢迎与大家进行相关交流；
 
 **项目在线体验**
 
 - 体验链接：<https://www.jplogic.cn/login>   登陆账号admin/huangjianwen
-
-**技术QQ群交流**
-
-![jplogiccloud群二维码](http://image.jplogic.cn/img/Jplogiccloud-qcode2.png "jplogiccloud群二维码")
 
 
 **项目CI/CD可持续集成演示**
